@@ -1,0 +1,1928 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+h1 {
+  font-size: 2vw;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: verdana;
+  src: url('REDDIT-WEBSITE/Fonts/verdana');
+}
+
+
+  @media only screen and (max-width: 600px) {
+
+    h2 {
+      font-size: 500vw;
+    }
+}
+  
+
+ 
+
+
+/************************************************HEADER*********************************************************/
+ 
+body {
+  opacity: 1;
+}
+
+
+#body-overlay {
+    position: relative;
+  padding-top: 6%;;
+  padding-bottom: 50%;
+  opacity: 0.5;
+  background:  black;
+  height: 100%;
+  top:-11%;
+ }
+
+.section-1 h1 {
+z-index: 24244242333333333333333333333;
+position: absolute;
+top: 35%;
+color: white;
+left: 44%;
+font-size: 2.2vw;
+ z-index: 13;
+display: none;
+}
+
+.section-1 h1 span{
+  left: 12%;
+  position: relative;
+  z-index: 13;
+}
+
+.showbody{
+  opacity: 1;
+}
+
+section h1 {
+  font-size: 2vw;
+}
+
+
+ .header {
+  box-sizing: border-box;
+  width: 100vw;
+  padding-bottom: 6%;
+  position: fixed;
+  top: 0vh;
+  left: 0%;
+  padding-right: 100vw;
+  transition: top 0.2s ease-in-out;
+  z-index: 324;
+  border-bottom: 0%;
+  transition: background-color 0.6s ease 0s;
+  background: transparent;
+  z-index: 7777777777777777777777777777777777777777777777;
+ }
+
+
+
+ .header h1{
+  z-index: 23;
+  color: white;
+  position: relative;
+  bottom: 2%;
+  left: 1.9vw;
+ }
+
+ .logo-white {
+  color: white;
+ }
+
+ .solid {
+  background-color: black;
+  transition: background-color 0.7s ease 0s;
+  color: white;
+ }
+
+ .no-bar {
+opacity: 0;
+transition: 0.3s;
+
+ }
+/*
+ .solid-2 {
+    background-color: black;
+  transition: background-color 0.7s ease 0s;
+  box-shadow: 0 0 4px grey;
+  color: white;
+ }
+ */
+
+  .logo {
+    color: black;
+    position: inline-block;
+    position: absolute;
+    top: 33%;
+    margin-top: 0%;
+    padding: 0;
+    left: 45%;
+    font-family: georgia;
+  }
+
+  .nav-up {
+  top: -14%  ;/*(TO HAVE THE HEADER SLIDE UP INSTEAD OF FADE OUT)*/ 
+   transition: 0.5s;
+  /*opacity: 0;
+  transition: 0.5s; (HAVE THE HEADER FADE OUT WHEN SCROLLING DOWN)*/
+}
+  .nav-fade {
+    background: transparent;
+    transition: 0.5s;
+  }
+
+.header a {
+  display: inline;
+  position: absolute;
+  margin-left: 5%;
+  padding-left: none
+  margin-right: 5%;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#header-link-1
+{left: -1%;}
+
+#header-link-2
+{left: 6%;}
+
+#header-link-3
+{left: 14%;}
+
+#header-link-4
+{left: 72%;}
+
+#header-link-5
+{left: 78%;}
+
+#header-link-6
+{left: 85%;}
+
+
+.left-links {
+  left: 5%;
+  top: 42%;
+}
+
+.right-links {
+  left: 90%;
+  top:42%;
+}
+
+.header h2 {
+  font-size: 1.2vw;
+}
+
+h2 > a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: white;
+}
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.footer-link {
+   display: inline;
+  position: absolute;
+  margin-left: 5%;
+  padding-left: none
+  margin-right: 5%;
+  text-decoration: none;
+  color: white;
+}
+
+#contact-us-header {
+  color: black;
+    background: black;
+}
+
+
+#contact-us-footer-link {
+  position: relative;
+  left: 45.6%;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3%;
+  bottom: 3%;
+  font-size: 120%
+}
+
+#contact-us-footer-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+/****************************************************************************************************************/
+
+ 
+
+
+/***********************************************BODY/CONTENT**************************************************************/
+
+
+section {
+  padding-bottom: 5%;
+}
+
+
+
+.content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 50%;
+}
+.footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 2%;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 100% Sans-Serif;
+}
+h1 {
+  margin: 0 0 2% 0;
+}
+p {
+  margin: 0 0 2% 0;
+  margin-bottom: 1.5%;
+}
+footer {
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+ .content {
+  background: lightgreen;
+  position: relative;
+  width: 100%
+  height: 100%;
+  padding: 8%;
+  margin: 12%;
+ }
+
+ .section-1 {
+  position: relative;
+  top:0%;
+  padding-top: 0%;
+  height: 90%;
+  width: 100%;
+  background: no-repeat url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  background-position: 20% 50% ;
+  padding-bottom: 0%;
+  background-size: 100%
+ }
+
+ .header-button{
+  position: absolute;
+  top
+ }
+
+
+ #ContactUsImage {
+    padding-bottom: 70vh;
+    background: no-repeat url('https://i.ibb.co/GFZBWgR/manhattan-407703-1920.jpg');
+ }
+
+ #ContactUsHeader{
+  background: black;
+  color: black;
+ }
+
+ .section-2 {
+  text-align: center;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-family: verdana;
+ }
+
+ .section-2 h1{
+  margin-bottom: 6%;
+ }
+ /*
+ .section-2 h1:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 10%; 
+    padding-top: 20px; 
+    border-bottom: 1px solid black; 
+}
+*/
+
+.contact-first-page{
+  margin-bottom: 10vw;
+}
+ 
+
+/************************************************SECTION-3******************************************************************/
+
+
+.section-3 {
+  padding-bottom: 0;
+}
+
+      .container-1{
+      display:flex;
+      flex-wrap: wrap; 
+    }
+    
+    .container-2{
+      display:flex; 
+      flex-wrap: wrap; 
+    }
+  
+
+   @media only screen and (max-width: 600px) {
+  .container-1 .container-2 {
+    flex-direction: column;
+  }
+}
+
+  
+
+  .box-1 {
+    background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  background-size: cover;
+  background-size: 100% 100%;
+  }
+
+  .box-2 {
+    background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  background-size: cover;
+  background-size: 100% 100%;
+  }
+    .box-3 {
+    background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  background-size: cover;
+  background-size: 100% 100%;
+  }
+   .box-4 {
+    background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  background-size: cover;
+  background-size: 100% 100%;
+
+  }
+  
+ /*******************************************LETTER SLIDING CLASS************************************************/ 
+  
+
+  .box-1 {
+    padding:3%;
+    padding-bottom: 10%;]
+    max-height: 13%;
+    transition : background-size 5s ease-in, opacity 0.1s ease-out;
+    background-position: center;
+
+  }
+
+  .letter-slide  {
+    position: relative;
+    left: 28%;
+    margin-bottom: 5%;
+  }
+
+
+  .letterslidespan {
+    opacity: 1
+  }
+
+
+@keyframes my-animation {        
+  from {
+   width: 0; 
+  }
+}
+#properties {
+ color: black; 
+  font-family: "Courier";
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+}
+
+.run-animation {
+  position: relative;
+  animation: my-animation 10s steps(60, end); 
+}
+
+
+
+/*
+ .box-1:hover ~ span:nth-of-type(1) {
+    opacity:1;
+    transition: 0.1s ease;
+    opacity:0;
+  }
+  .box-1:hover span:nth-of-type(2) {
+    opacity:1;
+    transition: 0.2s ease;
+  }
+.box-1:hover span:nth-of-type(3) {
+    opacity:1;
+    transition: 0.3s ease;
+  }
+.box-1:hover span:nth-of-type(4) {
+    opacity:1;
+    transition: 0.4s ease;
+  }
+.box-1:hover span:nth-of-type(5) {
+    opacity:1;
+    transition: 0.5s ease;
+  }
+.box-1:hover span:nth-of-type(6) {
+    opacity:1;
+    transition: 0.6s ease;
+  }
+.box-1:hover span:nth-of-type(7) {
+    opacity:1;
+    transition: 0.7s ease;
+  }
+  .box-1:hover span:nth-of-type(8) {
+    opacity:1;
+    transition: 0.8s ease;
+  }
+  .box-1:hover span:nth-of-type(9) {
+    opacity:1;
+    transition: 0.9s ease;
+  }
+.box-1:hover span:nth-of-type(10) {
+    opacity:1;
+    transition: 1s ease;
+  }
+.box-1:hover span:nth-of-type(11) {
+    opacity:1;
+    transition: 1.1s ease;
+  }
+.box-1:hover span:nth-of-type(12) {
+    opacity:1;
+    transition: 1.2s ease;
+  }
+.box-1:hover span:nth-of-type(13) {
+    opacity:1;
+    transition: 1.3s ease;
+  }
+.box-1:hover span:nth-of-type(14) {
+    opacity:1;
+    transition: 1.4s ease;
+  }
+*/
+
+
+
+/*******************************************LETTER SLIDING CLASS************************************************/
+.box-1:hover .letter-slide {
+}
+.box-2:hover .letter-slide{
+
+  }
+.box-3:hover .letter-slide{
+  
+  }
+.box-4:hover .letter-slide{
+    
+  }
+
+
+    .box-2 {
+    padding:3%;
+    padding-bottom: 10%;]
+    max-height: 13%;
+    transition: 5s ease-in;
+    background-position: center;
+
+  }
+    .box-3 {
+    padding:3%;
+    padding-bottom: 10%;]
+    max-height: 13%;
+    transition: 5s ease-in;
+    background-position: center;
+
+  }
+    .box-4 {
+    padding:3%;
+    padding-bottom: 10%;]
+    max-height: 13%;
+    transition: 5s ease-in;
+    background-position: center;
+
+  }
+
+   .box-1:hover {
+       background-size: 130% 130%;
+        transition: 8s ease;
+        background-position: center;
+
+  }
+
+   .box-2:hover {
+       background-size: 130% 130%;
+        transition: 8s ease;
+        background-position: center;
+
+  }
+
+
+  .box-1:hover h1 {
+    background: black;
+  }
+
+  .box-2:hover h1 {
+    background: black;
+  }
+
+
+  .box-3:hover {
+       background-size: 130% 130%;
+        transition: 8s ease;
+        background-position: center;
+  }
+
+   .box-4:hover {
+       background-size: 130% 130%;
+        transition: 8s ease;
+        background-position: center;
+  }
+  
+
+
+
+
+    .box-1:hover {
+    opacity: 1;
+  }
+   .box-2:hover {
+    opacity: 1;
+  }
+   .box-3:hover {
+    opacity: 1;
+  }
+   .box-4:hover {
+    opacity: 1;
+  }
+
+    
+  .box-1 h3 {
+    position: relative;
+    left: 40%;
+    top: 50%;
+    overflow: hidden;
+
+  }
+    .box-1{
+    flex:1;
+    order:1;
+     cursor: pointer;
+     opacity: 0.8;
+  }
+  
+  .box-2{
+    flex:1;
+    order:2;
+    transition: 0.1s ease;
+     cursor: pointer;
+     opacity: 0.8;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 3;
+    transition: 0.1s ease;
+     cursor: pointer;
+     opacity: 0.8;
+  }
+
+  .box-4{
+    flex:1;
+    order: 4;
+    transition: 0.1s ease;
+     cursor: pointer;
+     opacity: 0.8;
+  }
+
+
+  .overlay {
+    background: white;
+  }
+
+
+
+  .section-4 {
+    background: grey;
+    height: 200%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 10%;
+    transition: 0.4s ease;
+  }
+
+  .section-4:hover {
+    background-color: white;
+  }
+
+  .button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #ff0;
+    text-decoration: none;
+    font-family: verdana;
+    letter-spacing: 4px;
+    cursor: pointer;
+  }
+
+  .pictures div {
+    cursor: pointer;
+  }
+
+  .pictures {
+    cursor: pointer;
+  }
+
+
+   /*******************************************BUTTON*****************************************************/
+
+
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+  position: absolute;
+  display: block;
+  margin: 0vw 0;
+  padding: 80vw 24vw;
+  color: black;
+  font-size: 80vw;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 2vw rgba(0, 0, 0, 0.2), 0  0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+a.animated-button.thar-three {
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 0.2vw solid white;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+  color: black !important;
+  background-color: transparent;
+  text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+a.animated-button.thar-three:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  content: '';
+  color: white !important;
+  background: white;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+.btn {
+  width: 25%;
+  font-size: 2vw;
+}
+
+#button {
+   left: 22%;
+   font-size: 2vw;
+   text-align: center;
+   padding: 0.8vw;
+   padding-right: 0.6vw;
+   padding-left: 0.6vw;
+   width: 20vw;
+   z-index: 23;
+   top: 60%;
+   font-size: 1.5vw;
+   margin-top: 15%;
+   background-color: rgba(0, 0, 0, .5);
+   position: relative;
+
+}
+
+
+ /*****************************************************************************************************************/
+
+
+
+
+/***************************************************FOOTER*************************************************/
+
+
+.footer-link-1 {
+  position: relative;
+}
+.footer-link-1 {
+  position: absolute;
+  bottom: 50%;
+}
+
+
+
+ .footer-links {
+   position: relative;
+   margin-bottom: 4%;
+   left: 1%;
+
+ }
+
+ .footer-links a {
+    margin-right: 1%;
+    display:inline-block;
+    font-size: 80%;
+    text-decoration: none;
+    color: #bbb;
+ }
+
+ .footer-links h2 {
+  display:inline-block;
+  font-size: 105%;
+  margin-right: 19%;
+  margin-left: 19%;
+  text-align: center;
+ }
+
+
+ .footer-description {
+   position: relative;
+   left: -1%;
+   top: 5%;
+   color: #bbb;
+   text-align: center;
+ }
+
+
+#footer-logo {
+  font-size: 180%;
+}
+
+
+/*************************************************************************************************************/
+ 
+
+ 
+
+/**********************************************RESPONSIVENESS*************************************************/
+
+/* These media queries find the people who are using phones of certain sized screens and allows you to customise the css so the 
+content changes to fit the screen
+*/
+
+@media screen and (max-width: 500px) {
+  .details { display: none; }
+}
+
+/****************************************************************************************************************/
+
+.properties-description {
+  padding-bottom: 8%;
+  padding-top: 5%;
+}
+
+#properties-description {
+  left: 42%;
+  position: relative;
+}
+
+
+
+
+.contact-section {
+  background-image: url('https://i.ibb.co/GFZBWgR/manhattan-407703-1920.jpg');
+  background-size: cover;
+  background-size: 100% 100%;
+  padding-bottom: 55%;
+}
+
+.contact-section h1 {
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  z-index:23;
+}
+
+#dark-header {
+  background: black;
+  z-index: 235325235;
+}
+
+
+.black-overlay {
+  position: absolute;
+  background-color: black;
+  z-index: 24535;
+  opacity: 0.3;
+  display: inline-block;
+  height: 100%;
+  padding: 100%;
+}
+
+
+
+
+
+.pictures div {
+  position: relative;
+  margin-bottom: 32vh;
+  left: 18vw;
+  margin-top: 13vh;
+}
+
+
+.picture-1{
+   position: relative;
+  height: 100vh;
+  width: 100vw;
+  flex: 1;
+}
+.picture-2{
+   position: relative;
+  height: 100vh;
+  width: 100vw
+    flex: 1;
+
+}
+.picture-3{
+   position: relative;
+  height: 100vh;
+  width: 100vw
+    flex: 1;
+
+}
+.picture-4{
+  position: relative;
+  height: 210vh;
+  width: 100vw
+    flex: 1;
+}
+
+
+#pic-1 {
+background-size: cover;
+  background-size: 100% 100%;
+background-image: url('https://i.ibb.co/vBK1trg/architecture-1867187-1920.jpg');
+}
+
+#pic-2{
+  background-size: cover;
+  background-size: 100% 100%;
+background-image:  url('https://i.ibb.co/fr0wsYn/home-office-336377-1920.jpg');
+}
+
+#pic-3{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/vzSY5f7/newspapers-444450-1920.jpg');
+}
+
+#pic-4{
+  background-size: cover;
+  background-size: 100% 100%;
+background-image: url('https://i.ibb.co/fr0wsYn/home-office-336377-1920.jpg');
+}
+
+
+/*
+.picture-1{
+   position: relative;
+  height: 100vh;
+  width: 100vw;
+  flex: 1;
+  background-image: url('C:/Users/Me/Desktop/PROGRAMMING AND WEB DEVELOPMENT/REDDIT-WEBSITE/Images/architecture-1867187_1920.jpg');
+  background-size: cover;
+background-size: 100% 100%;
+}
+.picture-2{
+   position: relative;
+  height: 100vh;
+  width: 100vw
+  flex: 1;
+  background-image: url('C:/Users/Me/Desktop/PROGRAMMING AND WEB DEVELOPMENT/REDDIT-WEBSITE/Images/achievement-3387293_1920.jpg');
+}
+.picture-3{
+   position: relative;
+  height: 100vh;
+  width: 100vw
+  flex: 1;
+  background-image: url('C:/Users/Me/Desktop/PROGRAMMING AND WEB DEVELOPMENT/REDDIT-WEBSITE/Images/newspapers-444450_1920.jpg');
+}
+.picture-4{
+  position: relative;
+  height: 200vh;
+  width: 100vw
+  flex: 1;
+  background-image: url('C:/Users/Me/Desktop/PROGRAMMING AND WEB DEVELOPMENT/REDDIT-WEBSITE/Images/home-office-336377_1920.jpg');
+}
+*/
+
+
+
+
+
+  .button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    color: #ff0;
+    text-decoration: none;
+    font-family: verdana;
+    letter-spacing: 4px;
+  }
+
+
+   /*******************************************BUTTON*****************************************************/
+
+/*
+a.animated-button:link, a.animated-button:visited {
+  position: absolute;
+  display: block;
+  margin: 0vw 0;
+  padding: 80vw 24vw;
+  color: black;
+  font-size: 80vw;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 2vw rgba(0, 0, 0, 0.2), 0  0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+a.animated-button.thar-three {
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 0.2vw solid white;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+a.animated-button.thar-three:hover {
+  color: black !important;
+  background-color: transparent;
+  text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+a.animated-button.thar-three:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  content: '';
+  color: white !important;
+  background: white;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+.btn {
+  width: 25%;
+  font-size: 2vw;
+}
+#button {
+   left: 22%;
+   font-size: 2vw;
+   text-align: center;
+   padding: 0.8vw;
+   padding-right: 0.6vw;
+   padding-left: 0.6vw;
+   width: 20vw;
+   z-index: 23;
+   top: 60%;
+   font-size: 1.5vw;
+   margin-top: 15%;
+   background-color: rgba(0, 0, 0, .5)
+}
+*/
+.iframe-container {
+  position: relative;
+  width: 1000vw ;
+  height :1200vh;
+}
+
+.locations {
+
+}
+
+.contact {
+
+}
+
+section p {
+  font-family: 'Lato', sans-serif;
+}
+
+section h1 {
+  letter-spacing: 0.5vw;
+  font-weight:100;
+  font-size: 100%;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+.contact h1{
+  position: relative;
+  left: 44vw;
+  margin-top: 5vh;
+}
+
+.contact p {
+  position: relative;
+  left: 42vw;
+}
+
+iframe {
+}
+
+
+
+
+#properties-image-section{
+  height: 10vw;
+  padding-bottom: 20vw;
+}
+
+
+
+
+/*
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+*/
+/*
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+*/
+
+
+.properties-section-1 {
+  padding: 20vh;
+  position: relative;
+  left: 32vw;
+  top: 8vh;
+}
+
+#properties-header {
+  background: black;
+  display: flex;
+}
+
+
+.gallery-container {
+  display: flex;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  flex-wrap: wrap;
+}
+
+.gallery-image-container {
+  position: relative;
+  left: 30vw;
+  background: black;
+  width: 32vw;
+  height: 36vh;
+  overflow: hidden;
+  flex: 1;
+  left: 0vw;
+  margin: 1vw;
+  cursor: pointer;
+
+}
+
+.gallery-image {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 5s;
+}
+
+.gallery-image:hover {
+   transform: scale(1.5);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.gallery-image-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.gallery-image-container:hover .text {
+  opacity: 1;
+  z-index: 24592459727394723;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition:1s;
+}
+
+#last-gallery-container {
+  padding-bottom: 10vh;
+}
+
+#gallery-image-1{
+   background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  
+}
+
+#gallery-image-2{
+     background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-3{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url(https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg);
+}
+
+#gallery-image-4{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-5{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-6{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-7{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-8{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-9{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-10{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-11{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+#gallery-image-12{
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+}
+
+
+/*
+.left-to-right{
+  text-align: right;
+  width: 60%;
+}
+*/
+/*
+.section-2:hover {
+ animation: left_to_right 1s ease;
+}
+.pictures:hover {
+ animation: left_to_right 1s ease;
+}
+*/
+
+
+
+@keyframes left_to_right {
+  from {
+    position: relative;
+    margin-top: 40%;
+  }
+  to {
+     position: relative;
+    margin-top: 0;
+  }
+}
+
+.pauseanimation {
+animation-fill-mode : forwards;
+}
+
+
+
+.line {
+  border:  solid 0.05vh;
+  width: 5vw;
+  height: -1vw;
+  padding: 0;
+  position: relative;
+  left: 31.8vw;
+  top: -4vh;
+}
+
+
+
+#PROPERTY-FOOTER {
+  margin-top: 5%;
+}
+
+
+
+
+   @media only screen and (max-width: 375px){
+    
+    .gallery-container {
+      flex-direction: column;
+}
+
+.gallery-image-container {
+  width: 50vw;
+  height: 32vh;
+}
+
+  #contact-us-footer-link{
+    left: 36%;
+  }
+      
+      
+      
+   
+
+
+   #Social-media-gallery{
+    height: 67vh;
+    width: 100vw;
+    flex: 1;
+    left: 12%;
+    margin-left: 0;
+
+   }
+
+}
+
+.properties-section-1  {
+  text-align: center;
+  left: 0;
+
+}
+
+#Sales-Team-6 {
+  height: ;
+}
+
+
+
+/*   i ALSO CHANGED THE HEADER TO PERCENTAGES ON NOT VW I*/ 
+@keyframes left_to_right {
+  from {
+    position: relative;
+    margin-top: 40%;
+  }
+  to {
+     position: relative;
+    margin-top: 0;
+  }
+}
+
+
+.pauseanimation {
+animation-fill-mode : forwards;
+}
+
+
+.line {
+  border:  solid 0.05vh;
+  width: 5vw;
+  height: -1vw;
+  padding: 0;
+  position: relative;
+  left: 31.8vw;
+  top: -4vh;
+}
+
+
+.menu-icon-container {
+  display: none;
+}
+
+.menu-icon-container {
+  cursor: pointer;
+  position: absolute;
+  left: 87%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+
+
+
+.dropdown-menu {
+  height: 50%;
+  top: 50%;
+  background: black;
+  width: 100%;
+  display: block;
+  margin-top: 15%;
+    display: none;
+}
+
+.dropdown-menu div{
+  background-color: white;
+  width: 100vw;
+  height: 22vh;
+  text-align: center;
+  display: block;
+  margin: 0;
+  border: solid black 2px;   
+    font-family: verdana;
+}
+
+.dropdown-menu div:hover {
+  background: grey;
+  transition: 1s;
+  color: white;
+}
+
+
+.clicked {
+  background: white;
+}
+
+
+
+.link-clicked {
+  color: white;
+}
+
+
+
+.dropdown-menu div a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   top: 50%;
+   position: relative;
+   font-family: verdana;
+   letter-spacing: 4px;
+   font-family: georgia;
+
+}
+
+
+#PROPERTY-FOOTER {
+  margin-top: 5%;
+}
+
+
+
+
+   @media only screen and (max-width: 415px){
+    
+    .gallery-container {
+      flex-direction: column;
+}
+.gallery-image-container {
+  width: 100vw;
+  height: 32vh;
+}
+      
+   }    
+
+
+   #Social-media-gallery{
+    height: 67vh;
+    width: 100%;
+    flex: 1;
+    left: 0%;
+
+   }
+
+
+
+.properties-section-1  {
+  text-align: center;
+  left: 0;
+
+}
+
+#Sales-Team-6 {
+  height: ;
+}
+
+.menu-show{
+  display: block;
+  top: 50%;
+}
+
+
+
+
+/*
+.mobile-button {
+
+}
+
+
+.mobile-button h1 {
+
+}
+
+.mobile-pic-1-overlay{
+
+}
+
+*/
+
+.section-2 h1{
+  font-size: 170%;
+  opacity: 1;
+
+}
+
+
+p {
+  font-size: 100%;
+}
+
+
+
+
+
+
+/******************************MOBILE - BUTTON *****************************************/
+
+#mobile-button {
+  background-size: cover;
+  background-size: 100% 100%;
+  background-image: url('https://i.ibb.co/cxSQngT/jack-young-143113-unsplash.jpg');
+  position: relative;
+  height: 200%;
+  width: 100%;
+  padding: 13%;
+  display: none;
+  align-content: center;
+  text-align: center;
+}
+
+
+
+#text {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-size: 120%;
+  padding-right: 13%;
+  padding-left: 13%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  position:relative;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+ 
+}
+
+
+#text a {
+    text-decoration: none;
+    color: white;
+}
+
+#text a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#text:active {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+/*
+
+#container:active #text{
+    background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+#container:active #text a {
+      text-decoration: none;
+    color: black;
+}
+*/
+
+/**************************************************************************************/
+
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    h2 {
+      font-size: 500vw;
+    }
+}
+  
+
+    /* Medium screen min-width 641px */ 
+    @media only screen and (max-width: 415px){
+      .header h2 {
+       display: none;
+      }
+      .menu-icon-container {
+        display: inline-block;
+        top:10%;
+        right: 2%;
+      }
+
+      .section-1  h1 {
+        font-size: 4vw;
+        left: 17%;
+      }
+      .header {
+        padding-bottom: 0%;
+
+      }
+
+      .header h1 {
+        font-size: 4vw;
+        left: -20%;
+         }
+
+         #mobile-button {
+        display: block;
+        }
+
+        #text {
+       display: inline-block;
+      }
+
+      #container {
+        display: block;
+      }
+
+
+    }
+
+
+
+
+     @media only screen and (max-width: 279px){
+
+    /* when hamburger menu stops working */
+       .menu-icon-container {
+        display: inline-block;
+        top: 0%;
+        right: 5%;
+
+      }
+
+     
+   }
+
+
+
+
+ @media only screen and (max-width: 845px){
+     
+      .logo-picture {
+         padding: 2%;
+        padding-right: 6%;
+      }
+    #container {
+        display: block;
+      }
+       .pictures {
+          display: none;
+        }
+
+
+   }   
+
+
+   @media only screen and (max-width: 1220px){
+      .header h2 {
+        top: -19%;
+      }
+      .logo-picture {
+        top: 20%;
+      }
+
+   }     
+
+
+
+
+
+   @media only screen and (max-width: 415px){
+    
+    .logo-picture {
+          padding: 7.4vw;
+        padding-right: 15vw;
+        left: 0;
+        top: 0;
+      }
+      .menu-icon-container {
+        top: 18%;
+      }
+      .header {
+        background: black;
+        opacity: 1;
+  padding-bottom: 16%;
+      }
+  
+      #logo3 {
+        font-size: 6vw;
+
+         }  
+         #button {
+          display: none;
+         }
+
+         .mobile-button {
+        display: inline-block;
+        }
+
+        .pictures {
+          display: none;
+        }
+
+        .gallery-container {
+      padding: 0;
+      }
+
+      .gallery-image-container .text {
+       opacity: 1;
+       z-index: 24592459727394723;
+      }
+      .gallery-image-container .overlay {
+    opacity: 0.5;
+      }
+
+      
+
+   }   
+
+
+@media only screen and (max-width: 315px){
+    
+    .logo-picture {
+          padding: 7.4vw;
+        padding-right: 15vw;
+        left: 0;
+        top: 0;
+      }
+      .menu-icon-container {
+        top: 14%;
+      }
+      .header {
+        background: black;
+        opacity: 1;
+        padding-bottom: 18%
+      }
+  
+   #logo3 {
+        font-size: 8vw;
+
+         } 
+
+
+   }    
+
+
+
+
+
+    /* Medium screen min-width 641px and max-width 1024px */
+    @media only screen and (min-width:40.063em) and (max-width:64em){}     
+    /* Large screen min-width 1025px */ 
+    @media only screen and (min-width: 64.063em){} 
+     /* Large screen min-width 1025px and max-width 1440px */    
+    @media only screen and (min-width: 64.063em) and (max-width: 90em){}
+    /* Extra large screens  min-width 1441px */
+    @media only screen and (min-width: 90.063em){}
+     /* Extra large screens  min-width 1441px and max-width 1920px */   
+    @media only screen and (min-width: 90.063em) and (max-width: 120em){}
+    /* Extra Extra large screens min-width 1921px */  
+    @media only screen and (min-width: 120.063em){}
+/*****************************************************************19/03.19 TRANSFER TO GITHUB******************************************/
